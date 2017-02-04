@@ -1,0 +1,35 @@
+<!DOCTYPE>
+<html>
+
+<head>
+  <title>Pomodoro Clock</title>
+  <link href="pomodoro.css" rel="stylesheet" type="text/css">
+  <script src="pomodoro.js" async></script>
+</head>
+
+<body>
+  <h1>Pomodoro Clock</h1>
+  <div class="main">
+    <div class="timer" id="timer">
+      <button id="getTime" class="getTime">
+        <span id="minutes">25</span><span id="colon">:</span><span id="seconds">00</span>
+      </button>
+      <p id="sess" class="sess">Session</p>
+    </div>
+    <div id="rCycle" class="cycle">
+      <button id="addRest" class="change">+</button>
+      <span id="rest" class="timeCount">5</span>
+      <button id="lessRest" class="change">-</button>
+      <p class="text">BREAK</p>
+    </div>
+    <div id="wCycle" class="cycle">
+      <button id="addWork" class="change">+</button>
+      <span id="work" class="timeCount">25</span>
+      <button id="lessWork" class="change">-</button>
+      <p class="text">SESSION</p>
+    </div>
+    <button type="button" id="vol" class="vol"><img id="volImg" class="volImg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Speaker_Icon.svg/240px-Speaker_Icon.svg.png" alt="Volume"></button>
+  </div>
+</body>
+
+</html>
