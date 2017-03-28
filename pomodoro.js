@@ -58,7 +58,7 @@ getById("getTime").onclick = function () {
 //Argument xTime is either restTime or workTime which sets the seconds and minutes
 function pomodoro(xTime) {
   var time = xTime * 60
-  // Set interval of timer for with delay of 1000 ms
+    // Set interval of timer for with delay of 1000 ms
   timerId = setInterval(function () {
     time -= 1
     var min = Math.floor(time / 60)
@@ -77,7 +77,7 @@ function pomodoro(xTime) {
     minutes.innerHTML = minStr
     seconds.innerHTML = secStr
 
-//When timer goes to 0 add one to intCount and clear timer, according to intCount call pomodoro() recursively
+    //When timer goes to 0 add one to intCount and clear timer, according to intCount call pomodoro() recursively
     if (min === 0 && sec === 0) {
       intCount += 1
       clearInterval(timerId)
